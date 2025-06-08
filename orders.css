@@ -1,4 +1,3 @@
-/* תמונת הרקע של עמוד ההזמנות */
 html {
     background-image: url(./images/details/store.jpg);
     background-size: cover;
@@ -21,33 +20,22 @@ header {
     align-items: center;
 }
 
-/* לוגו ד"ר פיצה */
 header>img {
     width: 150px;
     float: right;
     display: inline;
 }
-
-/* #area{
-    display: none;
-    position: absolute; 
-}*/
-/* פרטי החנות בראש הדף */
 #detailsAboutTheStore {
     display: flex;
     float: right;
     margin-left: 20px;
     align-items: center;
 }
-
-/* הפסים המבדילים והכותרות */
 #detailsAboutTheStore h2 {
     margin: 10px;
     font-weight: normal;
     font-size: large;
 }
-
-/* כפתור החיפוש */
 #buttonSearch {
     margin-left: -200px;
     font-size: larger;
@@ -62,15 +50,11 @@ header>img {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     ;
 }
-
-/* כאשר הכפתור פתוח */
 .searchInputClose {
     /* width: 20vw; */
     display: none;
 
 }
-
-/* כאשר הכפתור סגור */
 .searchInputOpen {
     position: absolute;
     z-index: 90;
@@ -90,8 +74,6 @@ header>img {
 body>div {
     display: flex;
 }
-
-/* הדיב של כל העגלה */
 #bag {
     width: 20%;
     border-radius: 12px;
@@ -101,7 +83,6 @@ body>div {
     padding: 5px;
 }
 
-/* פרטי החתנות */
 #storeDetails {
     background-color: #b79b68;
     height: 100px;
@@ -116,16 +97,12 @@ body>div {
 #customerDetails {
     text-align: right;
 }
-
-/* העגלה עם המוצרים */
 #myBag {
     overflow-x: auto;
     overflow-x: hidden;
     height: 43vh;
     margin-bottom: 20px;
 }
-
-/* כל מוצר בעגלה */
 .productInBag {
     /* width: 182px; */
     border-bottom: solid 0.5px #2a2727;
@@ -134,8 +111,6 @@ body>div {
     justify-content: space-between;
     align-items: center;
 }
-
-/* התמונה של המוצר בעגלה */
 .productInBag>img {
     width: 63px;
     border-radius: 15px;
