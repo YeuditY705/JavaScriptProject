@@ -1,0 +1,57 @@
+html {
+    direction: rtl;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*colors*/
+.blackBackground {
+    /* background-color: #1e1d21; */
+    background-image: url(images/home/רקע\ שחור.png);
+    background-size: 100% 100%;
+}
+
+.black {
+    color: black;
+}
+
+.gray {
+    color: gray;
+}
+
+.goldBackground {
+    background: linear-gradient(-135deg, #b59965, #aa8c5a, #efd8a4, #c6ac78, #aa8d5b, #d2b884);
+}
+
+.gold {
+    color: #b79b68;
+}
+
+.white {
+    /* color: white; */
+    color: #fff;
+}
+.whiteBackground{
+    background-color: #fff;
+}
+.font {
+    font-family: "Heebo", Sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+.red {
+    color: rgb(164, 19, 19);
+}
+ul{
+    list-style: none;
+    margin-left: 30px;
+    font-size: x-large;
+}
+

@@ -1,0 +1,171 @@
+/* הדיב שמכסה את הדף כאשר הפופאפ קופץ */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 80;
+}
+/* פופאפ של אזורי חלוקה */
+#popupDialogArea {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 100px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    text-align: center;
+    border-radius: 30px;
+}
+
+#popupDialogProd {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    /* text-align: center; */
+    border-radius: 30px;
+    width: 350px;
+    /* height: 70vh; */
+    height: 600px;
+    text-align: right;
+
+}
+
+/* התמונה של המוצר */
+#popupDialogProd img {
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    position: relative;
+    top: -21px;
+}
+
+/* שם המוצר */
+#popupDialogProd h1 {
+    font-size: xx-large;
+    text-align: right;
+    display: inline;
+}
+
+/* מחיר המוצר */
+#popupDialogProd h2 {
+    display: inline;
+    color: #b79b68;
+    font-size: xx-large;
+    /* margin-left: 10px; */
+}
+
+/* תאור המוצר */
+#popupDialogProd p {
+    text-align: right;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+/* כפתור המוצר  */
+#popupDialogProd button {
+    border-radius: 30px;
+    border: none;
+    width: 120px;
+    background-color: #c9e8d4;
+    height: 40px;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+/* פלוס של הכפתור + */
+#popupDialogProd button>span {
+    color: green;
+}
+#popupDialogProd button:active {
+    box-shadow:  1px 1px 13px 4px #e60c12;
+}
+
+/* איקס שסוגר את הפופאפ של המוצר */
+#xClosePopupProd {
+    color: #b79b68;
+    border: solid #b79b68 2px;
+    border-radius: 50px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 20px;
+    box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+    position: relative;
+    top: 16px;
+    right: 303px;
+    z-index: 400;
+    cursor: pointer;
+}
+/* איקס שסוגר את הפופאפ*/
+.xClosePopup {
+    color: #b79b68;
+    border: solid #b79b68 2px;
+    border-radius: 50px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 20px;
+    box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+    position: relative;
+    /* top: 16px;
+    right: 333px; */
+    z-index: 400;
+    cursor: pointer;
+}
+/* פופאפ שעות פתיחה */
+#popupDialogHour{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 60px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    text-align: center;
+    border-radius: 30px;
+    color: black;
+}
+#popupDialogHour span{
+    font-weight: lighter;
+}
+#popupDialogHour h3{
+    font-weight: bold;
+}
+#popupDialogKosher{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    text-align: center;
+    border-radius: 30px;
+    color: black;
+}
+#popupDialogKosher img{
+    width: 250px;
+}
+#popupDialogKosher h2{
+    font-weight: bolder;
+}

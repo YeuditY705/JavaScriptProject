@@ -1,0 +1,48 @@
+html{
+        background-image: url(/images/details/store.jpg);
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+       text-align: center;
+       background-attachment: fixed;
+}
+form{
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+border-radius: 30px;
+width: 350px;
+/* height: 70vh; */
+position: fixed;
+z-index: 999;
+background-color: #fff;
+top: 20vh;
+width: 200px;
+left: 40vw;
+padding: 80px;
+}
+#cover{
+position: fixed;
+top: 0; 
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.5);
+z-index: 80;
+}
+button{
+    border-radius: 27px;
+    /* width: 40%; */
+    /* text-align: center; */
+    height: 37px;
+    line-height: 33px;
+    font-size: larger;
+    font-weight: bolder;
+    border: none;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+input{
+    border-radius: 30px;
+    /* margin-top: 5px; */
+    padding: 10px;
+    border: #b79b68 solid 0.5px;
+}

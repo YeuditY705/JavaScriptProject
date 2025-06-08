@@ -1,0 +1,265 @@
+/* תמונת הרקע של עמוד ההזמנות */
+html {
+    background-image: url(./images/details/store.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.4);
+
+}
+
+header {
+    position: fixed;
+    background-color: black;
+    z-index: 80;
+    width: 100%;
+    margin-top: -8px;
+    height: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* לוגו ד"ר פיצה */
+header>img {
+    width: 150px;
+    float: right;
+    display: inline;
+}
+
+/* #area{
+    display: none;
+    position: absolute; 
+}*/
+/* פרטי החנות בראש הדף */
+#detailsAboutTheStore {
+    display: flex;
+    float: right;
+    margin-left: 20px;
+    align-items: center;
+}
+
+/* הפסים המבדילים והכותרות */
+#detailsAboutTheStore h2 {
+    margin: 10px;
+    font-weight: normal;
+    font-size: large;
+}
+
+/* כפתור החיפוש */
+#buttonSearch {
+    margin-left: -200px;
+    font-size: larger;
+    /* float: left; */
+    width: 20px;
+    padding: 12px;
+    background-color: #fff;
+    border-radius: 30px;
+    margin-right: 10px;
+    position: relative;
+    z-index: 200;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    ;
+}
+
+/* כאשר הכפתור פתוח */
+.searchInputClose {
+    /* width: 20vw; */
+    display: none;
+
+}
+
+/* כאשר הכפתור סגור */
+.searchInputOpen {
+    position: absolute;
+    z-index: 90;
+    width: 84%;
+    /* margin-left: 100px; */
+    height: 60px;
+    border: none;
+    /* border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px; */
+    border-radius: 30px;
+    outline: none;
+    font-size: large;
+    color: #b79b68;
+
+}
+
+body>div {
+    display: flex;
+}
+
+/* הדיב של כל העגלה */
+#bag {
+    width: 20%;
+    border-radius: 12px;
+    margin-right: 76vw;
+    position: fixed;
+    margin-top: 125px;
+    padding: 5px;
+}
+
+/* פרטי החתנות */
+#storeDetails {
+    background-color: #b79b68;
+    height: 100px;
+    width: 100%;
+    padding-top: 26px;
+}
+
+#storeDetails p {
+    font-size: 20px;
+}
+
+#customerDetails {
+    text-align: right;
+}
+
+/* העגלה עם המוצרים */
+#myBag {
+    overflow-x: auto;
+    overflow-x: hidden;
+    height: 43vh;
+    margin-bottom: 20px;
+}
+
+/* כל מוצר בעגלה */
+.productInBag {
+    /* width: 182px; */
+    border-bottom: solid 0.5px #2a2727;
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* התמונה של המוצר בעגלה */
+.productInBag>img {
+    width: 63px;
+    border-radius: 15px;
+    height: 43px;
+}
+
+.productInBag>h2 {
+    font-size: small;
+    color: #b79b68;
+}
+
+/* שם המוצר בעגלה */
+.productInBag h1 {
+    font-size: small;
+    text-align: right;
+}
+
+/* כל המוצרים בעגלה */
+.productInBag div {
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 30px;
+    justify-content: center;
+}
+
+/* כפתורי הוספה והורדה */
+.productInBag button {
+    border: none;
+    font-size: medium;
+    background: none;
+    height: 20px;
+    font-weight: bolder;
+}
+
+.productInBag div h2 {
+    font-size: medium;
+    /* color: rgb(43, 226, 49); */
+}
+
+/* כפתור הוספת מוצר */
+.productInBag button:first-child {
+    color: green;
+}
+
+/* כפתור הורדת מוצר */
+.productInBag button:last-child {
+    color: red;
+}
+
+#total {
+    border-radius: 27px;
+    line-height: 33px;
+    font-size: small;
+    /* font-weight: bolder; */
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: none;
+}
+
+#empty {
+    opacity: 0.3;
+}
+
+#personImg {
+    border: solid black 0.5px;
+    border-radius: 30px;
+    width: 10%;
+    padding: 5px;
+}
+
+@media (max-width:950px) {
+    #category a {
+        font-size: xx-small;
+        font-weight: lighter;
+    }
+
+    #category {
+        flex-direction: row;
+    }
+}
+
+@media (max-width:750px) {
+    #bag {
+        display: none;
+    }
+
+    header :nth-child(3) {
+        display: none;
+    }
+
+    .divForProductsInEachCategory {
+        background-color: none;
+    }
+
+    #buttonSearch {
+        display: block;
+    }
+
+    #category {
+        visibility: hidden;
+    }
+
+    #seeTheCarriage {
+        /* display: block; */
+        border-radius: 30px;
+        color: #b79b68;
+        line-height: 20px;
+        border: none;
+        font-size: medium;
+        padding: 15px;
+        position: relative;
+        top: 100px;
+        opacity: 1;
+    }
+}
+
+#seeTheCarriage img {
+    width: 20px;
+}
+
+#seeTheCarriage {
+    opacity: 0.2;
+/* display: none; */
+}

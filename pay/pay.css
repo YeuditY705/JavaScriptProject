@@ -1,0 +1,74 @@
+html{
+    background-image: url(/images/details/store.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+   text-align: center;
+   direction: rtl;
+   background-attachment: fixed;
+}
+#creditCardDetail{
+text-align: center;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+border-radius: 30px;
+width: 350px;
+/* height: 70vh; */
+position: fixed;
+z-index: 999;
+height: fit-content;
+background-color: #fff;
+top: 70px;
+right: 40vw;
+padding: 80px;
+}
+
+#cover{
+position: fixed;
+top: 0; 
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.5);
+z-index: 80;
+}
+#carriage{
+    width: 25px;
+}
+
+button {
+border-radius: 27px;
+/* width: 40px; */
+/* text-align: center; */
+height: 37px;
+line-height: 33px;
+font-size: larger;
+font-weight: bolder;
+border: none;
+padding-right: 80px;
+padding-left: 80px;
+}
+input{
+    border-radius: 30px;
+    /* margin-top: 5px; */
+    padding: 10px;
+    border: #b79b68 solid 0.5px;
+    margin-bottom: 20px;
+}
+#succeed{
+    text-align: center;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+border-radius: 30px;
+width: 350px;
+/* height: 70vh; */
+position: fixed;
+z-index: 999;
+height: fit-content;
+background-color: #fff;
+top: 70px;
+right: 40vw;
+padding: 80px;
+display: none;
+}
+#succeed img{
+    width: 90%;
+}

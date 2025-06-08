@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/details/logo.png">
+    <link rel="stylesheet" href="./globalStyle.css">
+    <link rel="stylesheet" href="./orders.css">
+    <link rel="stylesheet" href="./products.css">
+    <link rel="stylesheet" href="./popup/popup.css">
+    <title>דוקטור פיצה - תפריט הזמנות</title>
+</head>
+
+<body class="font">
+    <div class="overlay"></div>
+    <div id="insertDetailsPopup">
+        <form action="">
+        </form>
+    </div>
+    <header>
+        <input type="text" id="inputSearch" class="searchInputClose " placeholder="הקלד כאן כדי לחפש...">
+        <img src="./images/details/logoDrPizza.png" alt="">
+        <div>
+            <div class="white" id="detailsAboutTheStore">
+                <h2 class="white" onclick="popupOpenHour()" style="cursor: pointer;">שעות פעילות</h2>
+                <div id="popupDialogHour">
+                    <span onclick="popupCloseHour()" class="xClosePopup">&times;</span>
+                    <h1>שעות פעילות</h1>
+                    <h3>ראשון - חמישי<br><span>17:00 - 8:00</span></h3>
+                    <h3>שישי<br><span>סגור</span></h3>
+                    <h3>מוצאי שבת<br><span>90 דקות אחרי צאת השבת - 01:00</span></h3>
+                </div>
+                <h2>|</h2>
+                <h2 onclick="popupOpenArea()" style="cursor: pointer;">אזורי חלוקה</h2>
+                <h2>|</h2>
+                <div id="popupDialogArea">
+                    <span onclick="popupCloseArea()" class="xClosePopup">&times;</span>
+                    <h1 class="black">אזורי חלוקה</h1>
+                    <ul id="listOfArea" class="gold">
+                        <li>רוממה</li>
+                        <li>גאולה</li>
+                        <li>רמות</li>
+                        <li>גבעת זאב</li>
+                        <li>סנהדריה</li>
+                        <li>מאה שערים</li>
+                    </ul>
+                </div>
+                <h2>1700500455</h2>
+                <h2>|</h2>
+                <h2 onclick="popupOpenKosher()" style="cursor: pointer;">כשרות</h2>
+                <div id="popupDialogKosher">
+                    <span onclick="popupCloseKosher()" class="xClosePopup">&times;</span>
+                    <h2>בד"ץ מהדרין</h2>
+                    <p>התעודת הכשרות בתוקף עד 11/01/2030</p>
+                    <img src="./images/details/kosher.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+        <img src="./images/icons/search.png" alt="" id="buttonSearch">
+        <button id="seeTheCarriage"><img src="./images/icons/carriage.png" alt="" id="carriage">לעגלה</button>
+    </header>
+
+    <div>
+        <!-- <p id="numOfFound" class="white">נמצאו</p> -->
+        <div id="category" class="whiteBackground">
+        </div>
+        <div id="products">
+        </div>
+        <div id="popupDialogProd">
+            <span onclick="popupCloseProd()" id="xClosePopupProd">&times;</span>
+            <div id="bigProduct"></div>
+        </div>
+        <div id="bag" class="whiteBackground">
+            <div id="customerDetails">
+                <img src="">
+                <p><img src="./images/icons/person-fill.svg" alt="" id="personImg">שלום <span id="customerName"></span>
+                </p>
+            </div>
+            <div id="storeDetails">
+                <p>כתובת הסניף לאיסוף עצמי <br>הרטום 10,ירושלים <span id="storeAddress"></span></p>
+            </div>
+            <div id="myBag">
+                <p id="empty" class="font">העגלה שלך ריקה</p>
+            </div>
+            <a href="" id="total" class="goldBackground white"></a>
+        </div>
+    </div>
+    <script src="./jquery-3.2.1.js"></script>
+    <script src="./products.js"></script>
+    <script src="./orders.js"></script>
+    <script src="./popup/popup.js"></script>
+</body>
+
+</html>

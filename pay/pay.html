@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>דקטור פיצה - תשלום</title>
+    <link rel="icon" href="/images/details/logo.png">
+    <link rel="stylesheet" href="./pay.css">
+    <link rel="stylesheet" href="/globalStyle.css">
+</head>
+
+<body class="font">
+    <div id="cover"></div>
+    <div id="creditCardDetail">
+        <div class="gold">
+            <a href="/orders.html" onclick="setBag()"><img src="/images/icons/carriage.png" alt="" id="carriage">חזרה להזמנה</a>
+            <p class="black">__________________________________________</p>
+        </div>
+
+        <form action="">
+            <h2 id="sum" class="font gold"></h2>
+            <input type="text" id="name" placeholder="שם"><br>
+            <input type="text" id="phone" placeholder="טלפון" minlength="9" maxlength="10"><br>
+            <input type="text" id="numVisa" placeholder="מספר אשראי" checked><br>
+            <input type="text" id="threeNum" placeholder="vcv"><br>
+            <input type="text" id="year" placeholder="תוקף"><br>
+            <button type="submit" class="goldBackground font">לתשלום</button>
+        </form>
+    </div>
+    <div id="succeed">
+        <img src="/images/icons/ok.gif" alt="">
+        <h3 class="gold">ההזמנה נקלטה בהצלחה</h3>
+        <p>ומחכה לכם בחנות</p>
+        <p>תבואו בשעה <span id="timeToCome"></span> אחרת האוכל יתקרר...</p>
+        <p class="black">__________________________________________</p>
+    </div>
+    <script src="./pay.js"></script>
+</body>
+
+</html>
