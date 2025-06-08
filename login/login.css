@@ -10,7 +10,6 @@ form{
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 border-radius: 30px;
 width: 350px;
-/* height: 70vh; */
 position: fixed;
 z-index: 999;
 background-color: #fff;
@@ -30,8 +29,6 @@ z-index: 80;
 }
 button{
     border-radius: 27px;
-    /* width: 40%; */
-    /* text-align: center; */
     height: 37px;
     line-height: 33px;
     font-size: larger;
@@ -42,7 +39,6 @@ button{
 }
 input{
     border-radius: 30px;
-    /* margin-top: 5px; */
     padding: 10px;
     border: #b79b68 solid 0.5px;
 }
