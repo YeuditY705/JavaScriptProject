@@ -122,13 +122,11 @@ body>div {
     color: #b79b68;
 }
 
-/* שם המוצר בעגלה */
 .productInBag h1 {
     font-size: small;
     text-align: right;
 }
 
-/* כל המוצרים בעגלה */
 .productInBag div {
     display: flex;
     align-items: center;
@@ -137,7 +135,6 @@ body>div {
     justify-content: center;
 }
 
-/* כפתורי הוספה והורדה */
 .productInBag button {
     border: none;
     font-size: medium;
