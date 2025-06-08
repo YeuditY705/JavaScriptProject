@@ -12,7 +12,6 @@ text-align: center;
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 border-radius: 30px;
 width: 350px;
-/* height: 70vh; */
 position: fixed;
 z-index: 999;
 height: fit-content;
@@ -49,7 +48,6 @@ padding-left: 80px;
 }
 input{
     border-radius: 30px;
-    /* margin-top: 5px; */
     padding: 10px;
     border: #b79b68 solid 0.5px;
     margin-bottom: 20px;
@@ -59,7 +57,6 @@ input{
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 border-radius: 30px;
 width: 350px;
-/* height: 70vh; */
 position: fixed;
 z-index: 999;
 height: fit-content;
